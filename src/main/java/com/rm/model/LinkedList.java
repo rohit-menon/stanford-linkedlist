@@ -8,9 +8,9 @@ package com.rm.model;
  *
  */
 public class LinkedList<T> {
-	
+
 	Node<T> head_;
-	
+
 	public LinkedList() {
 		head_ = null;
 	}
@@ -18,7 +18,7 @@ public class LinkedList<T> {
 	public LinkedList(Node<T> head) {
 		this.head_ = head;
 	}
-	
+
 	public Node<T> getHead() {
 		return head_;
 	}
@@ -26,7 +26,5 @@ public class LinkedList<T> {
 	public void setHead(Node<T> head) {
 		this.head_ = head;
 	}
-	
-	
 
 }

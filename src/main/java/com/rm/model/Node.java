@@ -11,6 +11,14 @@ public class Node<T> {
 	private T value_;
 	private Node<T> next_;
 
+	public Node() {
+		next_ = null;
+	}
+
+	public Node(T value) {
+		value_ = value;
+	}
+
 	public T getValue() {
 		return value_;
 	}
