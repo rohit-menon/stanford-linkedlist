@@ -21,9 +21,9 @@ public class Main {
 		linkedList.setHead(node);
 
 		Operations<Integer> operations = new Operations<Integer>();
-		operations.addNodeAtHead(linkedList.getHead(), 2);
-		operations.addNodeAtHead(linkedList.getHead(), 3);
-		operations.addNodeAtHead(linkedList.getHead(), 2);
+		linkedList.setHead(operations.addNodeAtHead(linkedList.getHead(), 2));
+		linkedList.setHead(operations.addNodeAtHead(linkedList.getHead(), 3));
+		linkedList.setHead(operations.addNodeAtHead(linkedList.getHead(), 2));
 
 		System.out.println("Lenght of linked list: "
 				+ operations.length(linkedList.getHead()));
